@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #f6c0d0;
+  --blue: #51a5e1;
+  --light-blue: #eef6fc;
+  --maroon: #a63a50;
+  --brown: #816c61;
+}
+z body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background: var(--blue);
+  color: snow;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+aside {
+  width: 30%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: var(--light-blue);
+}
+
+aside p,
+aside span {
+  /* text-align: left; */
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.13);
+  margin-left: 0.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+aside p:hover {
+  background: lightskyblue;
+}
+
+article {
+  width: 70%;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+article > p {
+  margin: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.addTodoContainer > input,
+.addProjectContainer > input {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+.addTodoContainer,
+.addProjectContainer {
+  /* padding: 0.5rem 0.8rem;
+    font-size: 1.2rem; */
+  text-align: center;
+  display: none;
+}
+
+.addTodoContainer button,
+.addProjectContainer button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-circle,
+.fa-times {
+  cursor: pointer;
+  /* display: flex; */
+
+  /* align-items: center; */
+}
+
+.todoItem {
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem;
+  /* justify-content: space-around; */
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.todoItem:hover {
+  background: lightsteelblue;
+}
+
+.todoItem p {
+  width: 100%;
+}
+
+.todoItem > input {
+  padding: 0.3rem;
+  font-size: 1.1rem;
+  min-width: 120px;
+  margin-right: 1rem;
+  /* outline: none; */
+}
+
+/*  javascript todo checklist classes */
+.clicked-circle {
+  opacity: 0.3;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
+.clicked-text {
+  opacity: 0.4;
+}

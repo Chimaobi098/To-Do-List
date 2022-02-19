@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/037ff52ee3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js" defer></script>
+    <title>To-do List</title>
+  </head>
+  <body>
+    <header>To-do List</header>
+    <main>
+      <aside>
+        <p class="all">All</p>
+        <p class="today">Today</p>
+        <p class="this_week">This Week</p>
+        <h3>Projects</h3>
+        <div class="projects">
+          <p class="test">Default</p>
+          <p class="random">random</p>
+          <p>something</p>
+          <span class="addProjectPrompt">+ Add new project </span>
+          <div class="addProjectContainer">
+            <input type="text" class="projectCreator" />
+            <button class="project-add-btn">Add</button>
+            <button class="project-cancel-btn">Cancel</button>
+          </div>
+        </div>
+      </aside>
+      <article>
+        <h1 class="todo_header">Default</h1>
+        <div class="todo">
+          <div class="todoItem">
+            <i class="far fa-circle"></i>
+            <p>Take out the trash</p>
+            <input type="date" min="2022-02-08" class="date-picker" />
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <p class="addTodoPrompt">+ Add new task</p>
+        <div class="addTodoContainer">
+          <input type="text" class="addTodoInput" />
+          <button class="task-add-btn">Add</button>
+          <button class="task-cancel-btn">Cancel</button>
+        </div>
+      </article>
+    </main>
+    <footer>Copyright &copy; Chimaobi, 2022</footer>
+    /
+  </body>
+</html>
